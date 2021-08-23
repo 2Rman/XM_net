@@ -4,14 +4,12 @@
 
 .hat {
 	height: 300px;
-	background-image: url(content/hat-pic1.jpg) ;
+
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-color:#FFB1B1 ;
+	/*background-color:#FFB1B1 ;*/
 	text-align: left;
 	font-family: fantasy;
-
-
 }
 
 .t {

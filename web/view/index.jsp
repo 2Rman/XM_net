@@ -8,19 +8,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="..css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
     <title>Main</title>
 </head>
 <body class="main">
 
-<div class="hat">
+<div class="hat" style="background-image: url(../content/hat-pic.jpg) ;">
     <div class="t">XM
         <div class="littleT">ilieux.by
         </div>
     </div>
     <div class="topButtonsDiv">
-        <from action="controller" method="post"><input type="submit" id="regBut" value="Регистрация" class="topButtons">
-        </from>
+        <form action="controller" method="post"><input type="submit" id="regBut" value="Регистрация" class="topButtons">
+        </form>
         <form><input type="submit" id="entBut" value="Вход" class="topButtons"></form>
     </div>
 </div>
