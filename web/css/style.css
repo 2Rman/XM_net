@@ -1,0 +1,69 @@
+.main {
+	background-color: #FFF1D8;
+}
+
+.hat {
+	height: 300px;
+	background-image: url(content/hat-pic1.jpg) ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color:#FFB1B1 ;
+	text-align: left;
+	font-family: fantasy;
+
+
+}
+
+.t {
+	display: flex;
+	font-size: 50px;
+	color: #CFF9E9;
+	text-shadow: 1px 1px 1px #000;
+
+}
+
+.littleT {
+	padding-top: 25px;
+	font-size: 25px;
+}
+
+.topButtonsDiv {
+	position: relative;
+	top:60%;
+	bottom: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.topButtons {
+	height: 40px;
+	width: 150px;
+	border-radius: 5px ;
+	font-size: 20px;
+	margin: 10px;
+
+}
+
+
+
+
+.contentFirstLine {
+	padding-top: 2%;
+	align-content: center;
+	display: flex;
+
+}
+
+.square {
+
+	height: 150px;
+	width: 150px;
+	padding: 2px;
+	border: black;
+	border-radius: 5px;
+	margin: 10px;
+	font-size: 64px;
+	text-align: center;
+	line-height: 150px;
+	margin: auto;
+}
