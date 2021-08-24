@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="../css/style.css" type="text/css"/>
@@ -13,15 +15,14 @@
 </head>
 <body class="main">
 
-<div class="hat" style="background-image: url(../content/hat-pic.jpg) ;">
+<div class="hat"><!--style="background-image: url(../content/hat-pic.jpg)"-->
     <div class="t">XM
         <div class="littleT">ilieux.by
         </div>
     </div>
     <div class="topButtonsDiv">
-        <form action="controller" method="post"><input type="submit" id="regBut" value="Регистрация" class="topButtons">
-        </form>
-        <form><input type="submit" id="entBut" value="Вход" class="topButtons"></form>
+        <form action="?command=DO" method="post"><button class="topButtons">Регистрация</button> </form>
+        <button formaction="?command=DO" formmethod="post" class="topButtons">Вход</button>
     </div>
 </div>
 <div class="contentFirstLine">
