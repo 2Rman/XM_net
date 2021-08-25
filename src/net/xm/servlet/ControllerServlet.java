@@ -1,6 +1,7 @@
 package servlet;
 
 import connection.Connector;
+import org.apache.log4j.Logger;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,23 +11,20 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet
 public class ControllerServlet extends HttpServlet {
 
+    private static Logger logger = Logger.getRootLogger();
+
     Connector connector = new Connector();
 
-    protected void doGet(HttpServletResponse response, HttpServletRequest request) {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) {
+
 
     }
 
-    protected void doPost(HttpServletResponse response, HttpServletRequest request) {
-//        реализовать получение запроса
-        String action = request.getParameter("command");
-        System.out.println(request.getContextPath());
-        if (request != null) {
-            System.out.println(request);
+    public void doPost(HttpServletRequest request, HttpServletResponse response) {
 
-        }
-        if (action == "DO") {
+        if (request.getParameter("command").equals("do")) {
+            logger.info("Command finally got, so the query should be done");
             connector.doQuery();
-            log("трымай");
-        } else log("none");
+        }
     }
 }
