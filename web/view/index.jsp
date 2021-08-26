@@ -13,19 +13,25 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css"/>
     <title>Main</title>
 </head>
-<body class="main">
+<header class="main">
 
-<div class="hat" style="background-image:url(../content/hat-pic.jpg)">
+    <div class="hat" style="background-image:url(../content/hat-pic.jpg)">
 
-    <div class="t">XM
-        <div class="littleT">ilieux.by
+        <div class="t">XM
+            <div class="littleT">ilieux.by
+            </div>
+        </div>
+        <div class="topButtonsDiv">
+            <form method="post" action="/view/registration.jsp">
+                <button class="topButtons" name="regButton">Регистрация</button>
+            </form>
+            <form method="post" action="/view/error_404.jsp">
+                <button class="topButtons" name="entButton">Вход</button>
+            </form>
         </div>
     </div>
-    <div class="topButtonsDiv">
-        <form method="post" action="/view/controller?command=do"><button class="topButtons" name="regButton">Регистрация</button> </form>
-        <form method="post" action="/view/controller?command=do"><button class="topButtons" name="entButton">Вход</button></form>
-    </div>
-</div>
+</header>
+<body class="main">
 <div class="contentFirstLine">
     <div class="square">1</div>
     <div class="square">2</div>

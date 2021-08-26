@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="jdbc/connectionPool" auth="Container"
+              type="javax.sql.DataSource" maxActive="50"
+              maxIdle="30" maxWait="10000"
+              username="admin"
+              password="Ghjuhfvvf795!"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/xm_start?serverTimezone=UTC"
+              validationQuery="select 1"
+              removeAbandoned="true"
+              removeAbandonedTimeout="30"
+              logAbandoned="true"/>
+    <!--Три последние строчки: автоматический возврат в пул соединения,-->
+    <!--которые не были закрыты, а ссылка на соединение потеряна-->
+
+</Context>

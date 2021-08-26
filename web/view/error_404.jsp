@@ -9,13 +9,15 @@
 <html>
 <head>
     <title>ERROR404</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../css/error404.css" type="text/css"/>
 </head>
 <body>
-<h1>Error</h1>
+<h1 class="errorH1">Error404</h1>
 <div class="errorText">Sorry... This page found...</div>
 <div class="errorText"> But we are working on it! Really hardly!</div>
-<div>
-    <img src="../content/404.gif">
+<div class="errorImg">
+    <img src="../content/404.gif" alt="">
 </div>
 
 </body>

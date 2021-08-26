@@ -16,8 +16,6 @@ public class ControllerServlet extends HttpServlet {
     Connector connector = new Connector();
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
-
-
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
@@ -25,6 +23,7 @@ public class ControllerServlet extends HttpServlet {
         if (request.getParameter("command").equals("do")) {
             logger.info("Command finally got, so the query should be done");
             connector.doQuery();
+
         }
     }
 }

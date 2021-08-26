@@ -1,0 +1,48 @@
+.headTextReg {
+    font-size: 25px;
+    font-family: Arial;
+    text-align: center;
+}
+
+.registerForm {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 500px;
+    height: 500px;
+    border: 2px #515151 solid;
+}
+
+.textReg {
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.textField {
+    position: relative;
+    left: 24%;
+    width: 250px;
+    height: 20px;
+}
+
+.submitButton {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 15px;
+    text-align: center;
+    background-color: #C7894C;
+    border-radius: 5px;
+    border: 1px black solid;
+    margin: 20px;
+    bottom: 0;
+    left: 26%;
+}
+
+.submitButton:hover {
+    background-color: #C79A6D;
+    border-color: grey;
+}

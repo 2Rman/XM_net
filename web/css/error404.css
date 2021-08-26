@@ -1,0 +1,16 @@
+.errorH1 {
+    position: relative;
+    left: 10px;
+}
+
+.errorText {
+    font-size: 30px;
+    text-align: center;
+}
+
+.errorImg {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
