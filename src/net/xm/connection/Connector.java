@@ -1,6 +1,7 @@
 package connection;
 
 import org.apache.log4j.Logger;
+
 import java.sql.*;
 
 public class Connector {
@@ -26,10 +27,46 @@ public class Connector {
             while (result.next()) {
                 logger.info(result.getString("login") + " " + result.getString("password"));
             }
+
+            connection.close();
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
 
+
         return result;
+    }
+
+    public void regQuery(String login, String pass) {
+
+        ResultSet result = null;
+        String id = null;
+
+        logger.info("Registration query to DB");
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            connection = DriverManager.getConnection(url, username, password);
+            statement = connection.createStatement();
+            statement.executeUpdate("INSERT account (login, password) " +
+                    "values ('" + login + "','" + pass + "');");
+
+
+            result = statement.executeQuery("SELECT id FROM xm_start.account\n" +
+                    "WHERE login = '" + login + "';");
+            if (result.next()) {
+                id = result.getString(1);
+            }
+
+            logger.info("new account's id = " + id);
+
+            statement.executeUpdate("INSERT xm_start.user (id) " +
+                    "values ('" + id + "');");
+
+            connection.close();
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 }

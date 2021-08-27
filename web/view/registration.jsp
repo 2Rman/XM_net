@@ -37,7 +37,7 @@
     <input class="textField" type="password" name="pass" placeholder="Password" required>
     <p class="textReg">Повторите пароль</p>
     <input class="textField" type="password" name="passR" placeholder="Password" required>
-    <p><button type="submit" class="submitButton">Зарегистрироваться</button></p>
+    <p><button type="submit" class="submitButton" name="command" value="register">Зарегистрироваться</button></p>
     </div>
 </form>
 </body>
