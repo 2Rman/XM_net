@@ -1,0 +1,61 @@
+.frame {
+	position: fixed;
+	top: 40%;
+	left: 10%;
+	width: 80%;
+	height: 500px;
+	border: 1px black solid;
+	box-shadow: 2px 2px 2px #000;
+	background-color: #fffaf0;
+}
+
+.textMain {
+	padding-left: 35%;
+	font-family: Verdana;
+	font-size: 20px;
+}
+
+.textSimple {
+	font-family: Verdana;
+	position: relative;
+	left: 15%;
+}
+
+.row {
+	display: flex;
+}
+
+.cell {
+	padding-left: 200px;
+}	
+
+.cellButton {
+	padding-left: 44%;
+	padding-top: 50px;
+}
+
+.submitButton {
+    width: 200px;
+    height: 30px;
+    font-family: Verdana;
+    font-size: 15px;
+    text-align: center;
+    background-color: #bd885b;
+    border-radius: 5px;
+    border: 1px black solid;
+    box-shadow: 1px 1px 1px #000;
+    margin: 20px;
+}
+
+.submitButton:hover {
+    background-color: #C79A6D;
+    border-color: grey;
+}
+
+.textField {
+	position: relative;
+	height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	
+}
