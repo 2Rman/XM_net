@@ -21,7 +21,7 @@
             <form method="post" action="/view/registration.jsp">
                 <button class="topButtons" name="regButton">Регистрация</button>
             </form>
-            <form method="post" action="/view/error_404.jsp">
+            <form method="post" action="/view/authorization.jsp">
                 <button class="topButtons" name="entButton">Вход</button>
             </form>
         </div>
@@ -30,14 +30,16 @@
 <body class="main">
 <form action="/view/controller">
     <div class="registerForm">
-    <p class="headTextReg">Регистрация нового пользователя</p>
-    <p class="textReg">Введите логин</p>
-    <input class="textField" type="text" name="login" placeholder="Username" required></textarea>
-    <p class="textReg">Введите пароль</p>
-    <input class="textField" type="password" name="pass" placeholder="Password" required>
-    <p class="textReg">Повторите пароль</p>
-    <input class="textField" type="password" name="passR" placeholder="Password" required>
-    <p><button type="submit" class="submitButton" name="command" value="register">Зарегистрироваться</button></p>
+        <p class="headTextReg">Регистрация нового пользователя</p>
+        <p class="textReg">Введите логин</p>
+        <input class="textField" type="text" name="login" placeholder="Username" required></textarea>
+        <p class="textReg">Введите пароль</p>
+        <input class="textField" type="password" name="pass" placeholder="Password" required>
+        <p class="textReg">Повторите пароль</p>
+        <input class="textField" type="password" name="passR" placeholder="Password" required>
+        <p>
+            <button type="submit" class="submitButton" name="command" value="register">Зарегистрироваться</button>
+        </p>
     </div>
 </form>
 </body>

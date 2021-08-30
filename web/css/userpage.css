@@ -1,0 +1,35 @@
+.userField {
+	position: relative;
+	background-color: white;
+	width: 80%;
+	height: 450px;
+	top: 5%;
+	left: 10%;
+	border: 2px grey solid;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #000;
+}
+
+.welcomeText {
+	font-size: 25px;
+	margin: 10px;
+	text-align: center;
+}
+
+.textSimpleUser {
+	font-family: Verdana;
+	position: relative;
+	left: 25%;
+	height: 400px;
+	width: 500px;
+}
+
+.userFrame {
+	height: 200px;
+	width: 300px;
+}
+
+.userButton {
+	position: relative;
+	left: 40%;
+}

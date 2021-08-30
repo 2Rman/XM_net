@@ -19,6 +19,7 @@ public class RegistrationCommand {
         String password = request.getParameter("pass");
         String passwordRep = request.getParameter("passR");
 
+        session.setAttribute("login", login);
 
         if (!password.equals(passwordRep)) {
             page = "/view/registrationPassErr.jsp";
@@ -28,7 +29,7 @@ public class RegistrationCommand {
             page = "/view/userDataPage.jsp";
         }
 
-        logger.info(session.getAttribute(login));
+        logger.info("session login - " + session.getAttribute("login"));
 
         return page;
     }

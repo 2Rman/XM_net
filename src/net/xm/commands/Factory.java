@@ -17,16 +17,22 @@ public class Factory {
                 page = registration.register(request);
                 break;
             }
-            case AUTHORIZATION: {
+            case AUTHORIZE: {
                 AuthorizationCommand authorization = new AuthorizationCommand();
                 page = authorization.authorize(request);
                 break;
             }
-            case DATAUDATE:
+            case USERDATAUPDATE: {
                 UserDataUpdateCommand userDataUpdate = new UserDataUpdateCommand();
                 page = userDataUpdate.update(request);
                 break;
+            }
+            case LOGOUT: {
+                LogoutCommand logoutCommand = new LogoutCommand();
+                page = logoutCommand.logout(request);
+            }
         }
         return page;
     }
 }
+

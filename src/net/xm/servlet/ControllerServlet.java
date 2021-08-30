@@ -34,7 +34,5 @@ public class ControllerServlet extends HttpServlet {
         if (redirectPage == null) {
              response.sendRedirect(request.getContextPath() + "/error_404");
         } else response.sendRedirect(request.getContextPath() + redirectPage);
-
-
     }
 }

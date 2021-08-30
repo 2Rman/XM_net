@@ -29,16 +29,16 @@
 </header>
 <body class="main">
 <form action="/view/controller">
-    <div class="registerForm">
-        <p class="headTextReg">Регистрация нового пользователя</p>
+    <div class="authorizeForm">
+        <p class="headTextReg">Авторизуйтесь, пожалуйста</p>
         <p class="textReg">Введите логин</p>
         <input class="textField" type="text" name="login" placeholder="Username" required></textarea>
         <p class="textReg">Введите пароль</p>
         <input class="textField" type="password" name="pass" placeholder="Password" required>
-        <p class="textReg">Повторите пароль</p>
-        <input class="textField" type="password" name="passR" placeholder="Password" required>
-        <p><button type="submit" class="submitButton" name="command" value="register">Зарегистрироваться</button></p>
-        <p class="passwordError">Пароли должны совпадать</p>
+        <p>
+            <button type="submit" class="submitButton" name="command" value="authorize">Войти в кабинет</button>
+        </p>
+        <p class="passwordError">Пароль не верен</p>
     </div>
 </form>
 </body>

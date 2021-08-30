@@ -19,7 +19,7 @@
             <form method="post" action="/view/registration.jsp">
                 <button class="topButtons" name="regButton">Регистрация</button>
             </form>
-            <form method="post" action="/view/error_404.jsp">
+            <form method="post" action="/view/authorization.jsp">
                 <button class="topButtons" name="entButton">Вход</button>
             </form>
         </div>
