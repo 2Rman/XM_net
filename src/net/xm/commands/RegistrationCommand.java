@@ -4,12 +4,15 @@ import connection.Connector;
 import org.apache.log4j.Logger;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 
 public class RegistrationCommand {
 
     public String register(HttpServletRequest request){
+
         Connector regConnector = new Connector();
         HttpSession session = request.getSession();
+
 
         Logger logger = Logger.getRootLogger();
 

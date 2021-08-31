@@ -28,6 +28,13 @@ public class UserDataUpdateCommand {
         String phone = request.getParameter("phone");
         String city = request.getParameter("city");
 
+
+        session.setAttribute("name", name);
+        session.setAttribute("surname", surname);
+        session.setAttribute("email", email);
+        session.setAttribute("phone", phone);
+        session.setAttribute("city", city);
+
         regConnector.updateQuery(name, surname, email, phone, city, id);
         logger.info("Updated " + id + " " + name + " " + surname + " " + email + " " + phone + " " + city);
         page = "/view/userPage.jsp";

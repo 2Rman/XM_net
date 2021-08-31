@@ -30,24 +30,24 @@
 <body class="main">
 <div class="userField">
     <div class="welcomeText">
-        Добро пожаловать в личный кабинет, <c: ${sessionScope.name}>!
+        Добро пожаловать в личный кабинет, ${sessionScope.name}!
     </div class="userFrame">
         <div class="textSimpleUser">
             
                 <div>
-                    <p>Имя:</p><div class="textField" name="name" ${name}></div>
+                    <p>Имя:</p><div class="textField" name="name">${sessionScope.name}</div>
                 </div>
                 <div>
-                    <p>Фамилия</p><div class="textField" name="surname" ${sessionScope.surname}></div>
+                    <p>Фамилия</p><div class="textField" name="surname" >${sessionScope.surname}</div>
                 </div>
                 <div>
-                    <p>Контактный телефон</p><div class="textField" name="phone" ${sessionScope.phone}></div>
+                    <p>Контактный телефон</p><div class="textField" name="phone" >${sessionScope.phone}</div>
                 </div>
                 <div>
-                    <p>Город</p><div class="textField" name="city" ${sessionScope.city}></div>
+                    <p>Город</p><div class="textField" name="city" >${sessionScope.city}</div>
                 </div>
                 <div>
-                    <p>Email</p><div class="textField" name="email" ${sessionScope.email}></div> 
+                    <p>Email</p><div class="textField" name="email" >${sessionScope.email}</div>
                 </div>
             
             <p class="userButton">
